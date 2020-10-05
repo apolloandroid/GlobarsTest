@@ -1,0 +1,43 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionOverflowButtonStyle">@style/style_toolbar</item>
+    </style>
+    <!-- Splash activity style. -->
+    <style name="SplashActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/ic_globars</item>
+    </style>
+    <!-- Authorization fragment elements style. -->
+    <style name="style_authorization_edit_text">
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/authorization_view_background</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="style_authorization_button">
+        <item name="elevation">4dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="background">@drawable/authorization_view_background</item>
+        <item name="android:enabled">false</item>
+        <item name="android:focusable">true</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:text">@string/button_enter_text</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <!-- Toolbar style. -->
+    <style name="style_toolbar" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@android:color/white</item>
+        <item name="actionMenuTextColor">@color/colorAccent</item>
+    </style>
+</resources>

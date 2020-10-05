@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/fragment_horizontal_margin"
+        android:paddingTop="@dimen/fragment_vertical_margin"
+        android:paddingRight="@dimen/fragment_horizontal_margin"
+        android:paddingBottom="@dimen/fragment_vertical_margin"
+        tools:context=".ui.authorization.AuthorizationFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_icon_globars"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/ic_globars"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <EditText
+            android:id="@+id/edit_username"
+            style="@style/style_authorization_edit_text"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/edit_username_text"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_icon_globars" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            style="@style/style_authorization_edit_text"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/edit_password_text"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_username" />
+
+        <Button
+            android:id="@+id/button_enter"
+            style="@style/style_authorization_button"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/authorization_view_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_password"
+            app:layout_constraintVertical_bias="0.006" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.globarstest.ui.authorization.AuthorizationViewModel" />
+    </data>
+</layout>

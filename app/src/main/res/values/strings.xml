@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GlobarsTest</string>
+
+    <!-- Strings related to AuthorizationFragment -->
+    <string name="edit_username_text">Введите имя</string>
+    <string name="edit_password_text">Введите пароль</string>
+    <string name="button_enter_text">Войти</string>
+    <string name="error_message_text">Неверный логин или пароль</string>
+    <string name="no_internet_connection_message_text">Нет соединения с интернетом</string>
+    <string name="error_message_button_text">Ok</string>
+    <string name="error_message_title_text">Ошибка авторизации</string>
+
+    <!-- Strings related to MapFragment -->
+    <string name="map_toolbar_title">Транспортные средства</string>
+</resources>
